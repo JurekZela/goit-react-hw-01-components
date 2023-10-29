@@ -1,4 +1,8 @@
-@import-normalize; /* bring in normalize.css styles */
+import { createGlobalStyle } from "styled-components";
+import 'modern-normalize';
+ 
+export const GlobalStyles = createGlobalStyle`
+
 
 body {
   margin: 0;
@@ -7,6 +11,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  padding: 30px;
+  background-color: #c6cccc29;
 }
 
 code {
@@ -32,8 +39,17 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 * {
   box-sizing: border-box;
 }
+
+p {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+  `;

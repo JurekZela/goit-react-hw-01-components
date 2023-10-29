@@ -1,30 +1,30 @@
-import statisticsCss from '../Statistics/Statistics.module.css';
+import { StatisticsForm, Title, StatsList, Item, Label, Percentage } from './Statistics.styled.js';
 
 const  Statistics = ({title, stats}) => {
     return (
-        <section className={statisticsCss.statistics}>
-  <h2 class="title">Upload stats</h2>
+        <StatisticsForm>
+  <Title>Upload stats</Title>
 
-  <ul class="stat-list">
-    <li class="item">
-      <span class="label">.docx</span>
-      <span class="percentage">4%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp3</span>
-      <span class="percentage">14%</span>
-    </li>
-    <li class="item">
-      <span class="label">.pdf</span>
-      <span class="percentage">41%</span>
-    </li>
-    <li class="item">
-      <span class="label">.mp4</span>
-      <span class="percentage">12%</span>
-    </li>
-  </ul>
-</section>
-    )
+  <StatsList>
+    <Item>
+      <Label>.docx</Label>
+      <Percentage>4%</Percentage>
+    </Item>
+    <Item>
+      <Label>.mp3</Label>
+      <Percentage>14%</Percentage>
+    </Item>
+    <Item>
+      <Label>.pdf</Label>
+      <Percentage>41%</Percentage>
+    </Item>
+    <Item>
+      <Label>.mp4</Label>
+      <Percentage>12%</Percentage>
+    </Item>
+  </StatsList>
+</StatisticsForm>
+    )  
 };
 
 export { Statistics };

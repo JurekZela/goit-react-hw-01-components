@@ -4,6 +4,8 @@ import user from '../path/user.json';
 import { Statistics } from './Statistics/Statistics';
 import statisticsData from '../path/statistics.data';
 
+import { GlobalStyles } from '../globalStyled.js';
+
 export const App = () => {
   return (
     <div
@@ -27,6 +29,8 @@ export const App = () => {
       title="Upload stats" 
       stats={statisticsData}
       />
+
+      <GlobalStyles />
       </div>
       );
     };

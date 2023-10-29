@@ -1,19 +1,4 @@
-// import { clsx } from 'clsx';
-import styled from 'styled-components';
-import css from './Profile.module.css';
-
-//  // <div className={css.profile}>
-//  </div>
-
-const PageTitle = styled.div`
-width: 200px;
-    height: 300px;
-    margin: 0 auto;
-    padding: 0;
-    border:  2px solid darkgray;
-    position: absolute;
-    top: 10px;
-    `;
+import { PageTitle, Description, Stats, StatsBlock, Label, Quantity, Name, Tag, Location, PhotoProfile } from './Profile.styled.js';
 
 const Profile = ({
   username, 
@@ -23,31 +8,30 @@ const Profile = ({
   stats: { followers, views, likes } }) => {
     return (
       <PageTitle >
-          <div className={css.description}>
-            <img
+        <Description>
+            <PhotoProfile
             src={avatar}
             alt={username}
-            className={css.avatar}
             />
-      <p className={css.name}>{username}</p>
-      <p className={css.tag}>{tag}</p>
-      <p className={css.location}>{location}</p>
-    </div>
+      <Name>{username}</Name>
+      <Tag>{tag}</Tag>
+      <Location>{location}</Location>
+      </Description>
 
-    <ul className={css.stats}>
-      <li className={css.statsBlock}>
-        <span className={css.label}>Followers</span>
-        <span className={css.quantity}>{followers}</span>
-      </li>
-      <li className={css.statsBlock}>
-        <span className={css.label}>Views</span>
-        <span className={css.quantity}>{views}</span>
-      </li>
-      <li className={css.statsBlock}>
-        <span className={css.label}>Likes</span>
-        <span className={css.quantity}>{likes}</span>
-      </li>
-    </ul>
+    <Stats>
+      <StatsBlock>
+        <Label>Followers</Label>
+        <Quantity>{followers}</Quantity>
+      </StatsBlock>
+      <StatsBlock>
+        <Label>Views</Label>
+        <Quantity>{views}</Quantity>
+      </StatsBlock>
+      <StatsBlock>
+        <Label>Likes</Label>
+        <Quantity>{likes}</Quantity>
+      </StatsBlock>
+    </Stats>
   </PageTitle>
   )
 };
