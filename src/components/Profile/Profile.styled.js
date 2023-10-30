@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 export const PageTitle = styled.div`
  width: 1000px;
-  background-color: #ffffff;
+  background-color: ${p => p.theme.colors.white};
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15px;
   width: 370px;
   box-shadow: 0 0 10px #c6cccced;
   border-radius: 10px;
@@ -18,6 +17,7 @@ export const PageTitle = styled.div`
   align-items: center;
   width: inherit;
   border-bottom: #7e6f7498 solid 2px;
+  padding-top: 15px;
 `;
 
 export const PhotoProfile = styled.img`
@@ -54,33 +54,33 @@ export const Label = styled.span`
   margin-right: 3px;
   font-weight: 700;
   font-size: 20px;
-  color: #524a4d8b;
+  color: ${p => p.theme.colors.colorLabel};
   margin-bottom: 5px;
 `;
 
 export const Quantity = styled.span`
   font-weight: 800;
   font-size: 20px;
-  color: #524a4d;
+  color: ${p => p.theme.colors.colorText};
 `;
 
 export const Name = styled.p`
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 15px;
-  color: #524a4d;
+  color: ${p => p.theme.colors.colorText};
   `;
 
 export const Tag = styled.p`
   font-weight: 500;
   font-size: 20px;
-  color: #524a4d;
+  color: ${p => p.theme.colors.colorText};
   margin-bottom: 15px;
 `;
 
 export const Location = styled.p`
  font-weight: 700;
   font-size: 20px;
-  color: #524a4d;
+  color: ${p => p.theme.colors.colorText};
   margin-bottom: 15px;
 `;

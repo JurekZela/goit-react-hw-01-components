@@ -1,6 +1,6 @@
 import { PageTitle, Description, Stats, StatsBlock, Label, Quantity, Name, Tag, Location, PhotoProfile } from './Profile.styled.js';
 
-const Profile = ({
+export const Profile = ({
   username, 
   tag,
   location,
@@ -35,5 +35,3 @@ const Profile = ({
   </PageTitle>
   )
 };
-
-export { Profile };

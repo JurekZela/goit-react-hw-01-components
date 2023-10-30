@@ -13,7 +13,7 @@ export const Title = styled.h2`
 font-weight: 700;
     font-size: 30px;
     margin-bottom: 15px;
-    color: #524a4d;
+    color: ${p => p.theme.colors.colorText};
     `;
   
   export const StatsList = styled.ul`
@@ -34,12 +34,12 @@ export const Item = styled.li`
 export const Label = styled.span`
     font-weight: 700;
     font-size: 20px;
-    color: #524a4d8b;
+    color: ${p => p.theme.colors.colorLabel};
     margin-bottom: 5px;
     `;
   
   export const Percentage = styled.span`
     font-weight: 800;
     font-size: 20px;
-    color: #524a4d;
+    color: ${p => p.theme.colors.colorText};
     `;

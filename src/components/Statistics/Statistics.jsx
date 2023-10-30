@@ -1,6 +1,6 @@
 import { StatisticsForm, Title, StatsList, Item, Label, Percentage } from './Statistics.styled.js';
 
-const  Statistics = ({title, stats}) => {
+export const  Statistics = ({title, stats}) => {
     return (
         <StatisticsForm>
   <Title>Upload stats</Title>
@@ -26,5 +26,3 @@ const  Statistics = ({title, stats}) => {
 </StatisticsForm>
     )  
 };
-
-export { Statistics };

@@ -9,15 +9,14 @@ import { GlobalStyles } from '../globalStyled.js';
 export const App = () => {
   return (
     <div
-      style={{
-        height: '100vh',
+    style={
+      {
         display: 'flex',
         justifyContent: 'center',
+        flexDirection: 'column',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
+      }
+    }>
       <Profile
       username={user.username}
       tag={user.tag}
@@ -34,3 +33,10 @@ export const App = () => {
       </div>
       );
     };
+
+    // style={{
+    // justifyContent: 'center',
+    // flexWrap: 'wrap',
+    //   fontSize: 40,
+    //   color: '#010101'
+    // }}
