@@ -33,10 +33,3 @@ export const App = () => {
       </div>
       );
     };
-
-    // style={{
-    // justifyContent: 'center',
-    // flexWrap: 'wrap',
-    //   fontSize: 40,
-    //   color: '#010101'
-    // }}
