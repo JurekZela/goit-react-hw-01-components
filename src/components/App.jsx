@@ -4,6 +4,9 @@ import user from '../path/user.json';
 import { Statistics } from './Statistics/Statistics';
 import statisticsData from '../path/statistics.data';
 
+import { FriendList } from './FriendList/FriendList'
+import friends from '../path/friends.json';
+
 import { GlobalStyles } from '../globalStyled.js';
 
 export const App = () => {
@@ -28,6 +31,9 @@ export const App = () => {
       title="Upload stats" 
       stats={statisticsData}
       />
+      <FriendList
+      friends={friends}
+       />
 
       <GlobalStyles />
       </div>
