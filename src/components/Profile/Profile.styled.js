@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const PageTitle = styled.div`
  width: 1000px;
-  background-color: ${p => p.theme.colors.white};
+  background-color: ${({theme:{ colors } }) => colors.white};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,33 +54,33 @@ export const Label = styled.span`
   margin-right: 3px;
   font-weight: 700;
   font-size: 20px;
-  color: ${p => p.theme.colors.colorLabel};
+  color: ${({theme:{ colors } }) => colors.colorLabel};
   margin-bottom: 5px;
 `;
 
 export const Quantity = styled.span`
   font-weight: 800;
   font-size: 20px;
-  color: ${p => p.theme.colors.colorText};
+  color: ${({theme:{ colors } }) => colors.colorText};
 `;
 
 export const Name = styled.p`
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 15px;
-  color: ${p => p.theme.colors.colorText};
+  color: ${({theme:{ colors } }) => colors.colorText};
   `;
 
 export const Tag = styled.p`
   font-weight: 500;
   font-size: 20px;
-  color: ${p => p.theme.colors.colorText};
+  color: ${({theme:{ colors } }) => colors.colorText};
   margin-bottom: 15px;
 `;
 
 export const Location = styled.p`
  font-weight: 700;
   font-size: 20px;
-  color: ${p => p.theme.colors.colorText};
+  color: ${({theme:{ colors } }) => colors.colorText};
   margin-bottom: 15px;
 `;

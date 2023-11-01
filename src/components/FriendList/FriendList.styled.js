@@ -32,5 +32,5 @@ export const Item = styled.li`
     font-weight: 700;
   font-size: 30px;
   margin-bottom: 15px;
-  color: ${p => p.theme.colors.colorText};
+  color: ${({theme:{ colors } }) => colors.colorText};
   `;

@@ -22,15 +22,15 @@ export const Header = styled.tr`
   justify-content: space-around;
   margin-bottom: 5px;
   padding: 10px;
-background-color: ${p => p.theme.colors.white};
-color: ${p => p.theme.colors.textHeader};
+background-color: ${({theme:{ colors } }) => colors.white};
+color: ${({theme:{ colors } }) => colors.textHeader};
 `;
 
   export const String = styled.tr`
    display: flex;
   justify-content: space-around;
   background-color: ${p => p.theme.colors.white}; 
-  color: ${p => p.theme.colors.textTable};
+  color: ${({theme:{ colors } }) => colors.textTable};
   `;
 
   export const Type = styled.td`
@@ -38,7 +38,7 @@ color: ${p => p.theme.colors.textHeader};
   width: inherit;
   font-weight: 700;
   font-size: 15px;
-  color: ${p => p.theme.colors.textHeader};
+  color: ${({theme:{ colors } }) => colors.textHeader};
   `;
 
 export const Amount = styled.td`
@@ -54,5 +54,5 @@ export const Currency = styled.td`
   width: inherit;
   font-weight: 700;
   font-size: 15px;
-  color:  ${p => p.theme.colors.textTable};
+  color:  ${({theme:{ colors } }) => colors.textTable};
   `;
