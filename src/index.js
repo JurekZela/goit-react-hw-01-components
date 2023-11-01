@@ -8,6 +8,8 @@ const theme = {
     white: '#ffffff',
     colorText: '#524a4d',
     colorLabel: '#524a4d8b',
+    textTable: ' #393e46',
+    textHeader: '#262626',
   },
 };
 

@@ -7,6 +7,9 @@ import statisticsData from '../path/statistics.data';
 import { FriendList } from './FriendList/FriendList'
 import friends from '../path/friends.json';
 
+import { TransactionsHistory } from './Transactions/TransactionHistory';
+import transactions from '../path/transactions.json';
+
 import { GlobalStyles } from '../globalStyled.js';
 
 export const App = () => {
@@ -33,6 +36,9 @@ export const App = () => {
       />
       <FriendList
       friends={friends}
+       />
+       <TransactionsHistory
+       items={transactions} 
        />
 
       <GlobalStyles />
