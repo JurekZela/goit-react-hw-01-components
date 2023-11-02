@@ -23,3 +23,4 @@ export const TransactionsHistory = ({ items  }) => {
    </TransactionsBlock>
   )
 };
+
