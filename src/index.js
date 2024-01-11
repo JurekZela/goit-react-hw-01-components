@@ -10,6 +10,8 @@ const theme = {
     colorLabel: '#524a4d8b',
     textTable: ' #393e46',
     textHeader: '#262626',
+    online: 'green',
+    offline: 'red',
   },
 };
 

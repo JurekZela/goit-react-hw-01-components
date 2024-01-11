@@ -10,17 +10,19 @@ export const FriendsBlock = styled.ul`
 
 export const Item = styled.li`
   display: flex;
-  justify-content: center;
+  align-items: center;
   width: inherit;
   box-shadow: 0 0 10px #c6cccced;
   padding: 20px;
+  padding-left: 70px;
+  gap: 10px;
   `;
 
-  export const Status = styled.span`
-   width: 30px;
-  height: 30px;
+  export const Status = styled.p`
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
-  margin-right: 20px;
+  display: block;
   `;
 
   export const Avatar = styled.img`

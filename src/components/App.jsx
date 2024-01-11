@@ -13,6 +13,7 @@ import transactions from '../path/transactions.json';
 import { GlobalStyles } from '../globalStyled.js';
 
 export const App = () => {
+  const { username, tag, location, avatar, stats } = user;
   return (
     <div
     style={
@@ -22,13 +23,14 @@ export const App = () => {
         flexDirection: 'column',
         alignItems: 'center',
       }
-    }>
+    }
+    >
       <Profile
-      username={user.username}
-      tag={user.tag}
-      location={user.location}
-      avatar={user.avatar}
-      stats={user.stats}
+      username={username}
+      tag={tag}
+      location={location}
+      avatar={avatar}
+      stats={stats}
       />
        <Statistics
       title={statisticsData[0].title}
