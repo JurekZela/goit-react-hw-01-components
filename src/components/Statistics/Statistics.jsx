@@ -3,7 +3,7 @@ import { StatisticsForm, Title, StatsList, Item, Label, Percentage } from './Sta
 export const  Statistics = ({title, stats}) => {
     return (
         <StatisticsForm>
-          <Title>{title.length > 0? title: null}</Title>
+          <Title>{title &&{title}}</Title>
   <StatsList>
     <Item $variant="docx">
       <Label>.docx</Label>
